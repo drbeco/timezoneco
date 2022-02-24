@@ -1,7 +1,7 @@
 base   timezoneco
 author Ruben Carlo Benante
 email  rcb@beco.cc
-date   2021-10-17
+date   2022-02-24
 name   Timezone changer plugin
 desc   Set up a different timezone for your dokuwiki
 url    https://www.dokuwiki.org/plugin:timezoneco
