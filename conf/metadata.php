@@ -6,5 +6,5 @@
  */
 
 
-$meta['timezone'] = array('string');
+$meta['timezone'] = array('multichoice', '_choices' => array_merge(array(''), timezone_identifiers_list()));
 
