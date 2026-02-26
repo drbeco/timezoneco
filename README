@@ -1,30 +1,22 @@
 timezoneco plugin for DokuWiki
 
-Set up a different timezone for your dokuwiki
+Set up a different timezone for your dokuwiki.
 
-edit dokuwiki/public/inc/init.php
+Install the plugin and go to Admin > Configuration Settings.
+Under the "Timezone changer plugin" section, set your timezone
+(e.g. "America/Sao_Paulo"). Leave it empty to use the server default.
 
-Comment line 95:
-//date_default_timezone_set(@date_default_timezone_get());
-
-Add lines:
-
-if(empty($conf['plugin']['timezoneco']['timezone'])){   
-    date_default_timezone_set(@date_default_timezone_get());
-}else{
-    date_default_timezone_set($conf['plugin']['timezoneco']['timezone']);
-}
-
-
+No core file editing required. The plugin hooks into DokuWiki's
+startup event and applies the timezone automatically.
 
 All documentation for this plugin can be found at
 https://github.com/drbeco/timezoneco
 
 If you install this plugin manually, make sure it is installed in
-lib/plugins/timezone/ - if the folder is called different it
+lib/plugins/timezoneco/ - if the folder is called different it
 will not work!
 
-Please refer to http://www.dokuwiki.org/extensions for additional info
+Please refer to https://www.dokuwiki.org/extensions for additional info
 on how to install extensions in DokuWiki.
 
 
